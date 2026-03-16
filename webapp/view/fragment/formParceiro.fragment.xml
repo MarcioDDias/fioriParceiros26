@@ -1,0 +1,50 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+	<VBox class="sapUiSmallMargin">
+		<f:SimpleForm id="formParceiro"
+			editable="false"
+			layout="ResponsiveGridLayout"
+			title="{i18n>tituloFormParceiro}"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+                <Label text="Nome 1" />
+                <Input value="{PartnerName1}" editable="{modo>/editavel}" />
+                <Label text="Nome 2" />
+                <Input value="{PartnerName2}" editable="{modo>/editavel}" />
+                <Label text="Termo de Pesquisa 1" />
+                <Input value="{SearchTerm1}" editable="{modo>/editavel}" />
+                <Label text="Termo de Pesquisa 2" />
+                <Input value="{SearchTerm2}" editable="{modo>/editavel}" />
+                <Label text="Rua" />
+                <Input value="{Street}" editable="{modo>/editavel}" />
+                <Label text="Número" />
+                <Input value="{HouseNumber}" editable="{modo>/editavel}" />
+                <Label text="Bairro" />
+                <Input value="{District}" editable="{modo>/editavel}" />
+                <Label text="Cidade" />
+                <Input value="{City}" editable="{modo>/editavel}" />
+                <Label text="Estado" />
+                <Input value="{Region}" editable="{modo>/editavel}" />
+                <Label text="País" />
+                <Input value="{ZipCode}" editable="{modo>/editavel}" />
+                <Label text="CEP" />
+                <Input value="{Country}" editable="{modo>/editavel}" />
+            </f:content>
+		</f:SimpleForm>
+	</VBox>
+</core:FragmentDefinition>

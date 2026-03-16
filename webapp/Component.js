@@ -50,11 +50,21 @@ sap.ui.define([
                     case "RouteParceiros":
                         sLayout = "OneColumn";
                         break;
+                    case "RouteDetalheParceiro":
+                    case "RouteNovoParceiro":
+                        sLayout = "TwoColumnsMidExpanded";
+                        break;    
                 }
                 
                 //Resgata o modelo e altera a propriedade modo que está associada no flexibleColumnLayout
                 let oModel = this.getModel("layout");
                 oModel.setProperty("/modo", sLayout);
+
+                //modelo para layout do app
+                let oModeloModo = new JSONModel();
+                oModeloModo.setProperty("/editavel", false);
+                this.setModel(oModeloModo, "modo");
+
             }
         });
     }

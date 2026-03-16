@@ -33,7 +33,11 @@
           "localUri": "localService/mainService/metadata.xml",
           "odataVersion": "2.0"
         }
-      }
+      },
+      "novoParceiro": {
+        "uri": "model/novoParceiro.json",
+        "type": "JSON"
+      }      
     }
   },
   "sap.ui": {
@@ -78,7 +82,11 @@
         "settings": {
           "useBatch": false
         }
-      }
+      },
+      "novoParceiro": {
+        "dataSource": "novoParceiro",
+        "type": "sap.ui.model.json.JSONModel"
+      }      
     },
     "resources": {
       "css": [
@@ -93,8 +101,7 @@
         "viewType": "XML",
         "async": true,
         "viewPath": "fiori.z99bp.view",
-        "controlAggregation": "pages",
-        "controlId": "app",
+        "controlId": "fcl",
         "clearControlAggregation": false
       },
       "routes": [
@@ -104,7 +111,23 @@
           "target": [
             "TargetParceiros"
           ]
-        }
+        },
+        {
+          "name": "RouteDetalheParceiro",
+          "pattern": "parceiro/{idParceiro}",
+          "target": [
+            "TargetParceiros",
+            "TargetDetalheParceiro"
+          ]
+        },
+        {
+          "name": "RouteNovoParceiro",
+          "pattern": "novo",
+          "target": [
+            "TargetParceiros",
+            "TargetNovoParceiro"
+          ]
+        }        
       ],
       "targets": {
         "TargetParceiros": {
@@ -112,8 +135,25 @@
           "transition": "slide",
           "clearControlAggregation": false,
           "viewId": "Parceiros",
-          "viewName": "Parceiros"
-        }
+          "viewName": "Parceiros",
+          "controlAggregation": "beginColumnPages"
+        },
+        "TargetDetalheParceiro": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "DetalheParceiro",
+          "viewName": "DetalheParceiro",
+          "controlAggregation": "midColumnPages"
+        },
+         "TargetNovoParceiro": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": true,
+          "viewId": "NovoParceiro",
+          "viewName": "NovoParceiro",
+          "controlAggregation": "midColumnPages"          
+        }       
       }
     },
     "rootView": {

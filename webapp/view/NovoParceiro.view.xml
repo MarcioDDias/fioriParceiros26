@@ -1,0 +1,20 @@
+<mvc:View xmlns:f="sap.f" controllerName="fiori.z99bp.controller.NovoParceiro"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Page>
+       <core:Fragment fragmentName="fiori.z99bp.view.fragment.criarParceiro" type="XML" id="formCriarParceiro"/>   
+
+
+
+        <footer>
+            <OverflowToolbar >
+                <ToolbarSpacer />
+                <Button text="{i18n>btnSalvar}" press="onPressSalvar" type="Emphasized"/>
+                <Button text="{i18n>btnCancelar}" press="onPressCancelar" type="Back"/>
+            </OverflowToolbar>  
+        </footer>
+
+    </Page>
+</mvc:View>

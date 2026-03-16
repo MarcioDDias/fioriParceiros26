@@ -43,6 +43,35 @@ function (Controller, Filter, FilterOperator) {
             //chama o método de filtro
             oBinding.filter(oFiltro);
 
-        }
+        },
+
+        aoSelecionarParceiro: function(oEvent){
+            //acessa o objeto do item clicado
+            let oItemClicado = oEvent.getParameters().listItem;
+
+            //acessa o contexto de binding (o caminho no modelo OData para o item)
+            let oBindingContext = oItemClicado.getBindingContext();
+
+            //acessa a entrada do item selecionado no modelo
+            let oParceiro = oBindingContext.getObject();
+
+            //guarda o ID do parceiro
+            let sIdParceiro = oParceiro.BusinessPartner;
+
+            //navegação - acessa o roteador e efetua navegação
+            let oRouter = this.getOwnerComponent().getRouter();
+
+            oRouter.navTo("RouteDetalheParceiro", {
+                idParceiro: sIdParceiro 
+            });
+
+        },
+        aoCriarParceiro: function(){
+            //acessa o roteador
+            let oRoteador = this.getOwnerComponent().getRouter();
+
+            //navegação para a página de criação
+            oRoteador.navTo("RouteNovoParceiro");
+        }        
     });
 });

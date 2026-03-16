@@ -1,0 +1,20 @@
+<mvc:View controllerName="fiori.z99bp.controller.DetalheParceiro"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="detalheParceiro">
+
+        <footer>
+            <OverflowToolbar >
+                <ToolbarSpacer />
+                <Button id="btnEditar" text="{i18n>Editar}" type="Emphasized" press="aoEditar"  />
+                <Button id="btnSalvar" text="{i18n>Salvar}" type="Accept" press="aoSalvar" visible="false" />
+                <Button id="btnCancelar" text="{i18n>Cancelar}" type="Reject" press="aoCancelar" visible="false" />
+            </OverflowToolbar>
+        </footer>
+    </Page>
+    
+
+
+
+</mvc:View>

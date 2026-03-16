@@ -2,28 +2,25 @@
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
-        <content>
 
-            <List id="listaParceiros"
-                  items="{/I_BusinessPartner}">
+        <List id="listaParceiros" 
+              mode="SingleSelectMaster"
+              items="{/I_BusinessPartner}"
+              itemPress="aoSelecionarParceiro">
 
-                <headerToolbar>
-                    <OverflowToolbar >
-                        <content>
-                            <SearchField liveChange="aoPesquisarParceiro" />
-                        
-                        </content>
-                    </OverflowToolbar>
-                
-                </headerToolbar>
+              <headerToolbar>
+                <Toolbar>
+                    <SearchField width="30%" liveChange="aoPesquisarParceiro"/>
+                    <ToolbarSpacer />
+                    <Button text="{i18n>criarParceiro}" type="Emphasized" press="aoCriarParceiro" />
 
-                <items>
-                    <StandardListItem title="{BusinessPartnerName}" description="{BusinessPartner}" 
-                    />
-                </items>
-            
-            </List>
+                </Toolbar>      
+              </headerToolbar>
+              
+              <!--agregação default pode ser omitida-->
+                <StandardListItem title="{BusinessPartnerName}" description="{BusinessPartner}" type="Active" />
+        </List>
 
-        </content>
+
     </Page>
 </mvc:View>
