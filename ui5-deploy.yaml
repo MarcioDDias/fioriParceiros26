@@ -2,7 +2,7 @@
 
 specVersion: "4.0"
 metadata:
-  name: fiori.z99bp
+  name: fiori.z13bp
 type: application
 builder:
   resources:
@@ -18,7 +18,7 @@ builder:
           url: http://S4HANA.IDES.COM:9222/
           client: '400'
         app:
-          name: Z99_BP
+          name: Z13_BP
           description: Feito com Fiori Tools
           package: $TMP
           transport: ''

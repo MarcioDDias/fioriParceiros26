@@ -8,7 +8,7 @@ sap.ui.define(
     function(BaseController, Fragment, MessageToast, MessageBox) {
       "use strict";
   
-      return BaseController.extend("fiori.z99bp.controller.DetalheParceiro", {
+      return BaseController.extend("fiori.z13bp.controller.DetalheParceiro", {
         onInit: function() {
 
             this._oFragment;
@@ -42,7 +42,7 @@ sap.ui.define(
 
             if(!this._oFragment){
                 Fragment.load({
-                    name: "fiori.z99bp.view.fragment.formParceiro",
+                    name: "fiori.z13bp.view.fragment.formParceiro",
                     controller: this
                 }).then(oFragment => {
                     //guardar o fragmento instanciado

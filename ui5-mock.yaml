@@ -2,7 +2,7 @@
 
 specVersion: "4.0"
 metadata:
-  name: fiori.z99bp
+  name: fiori.z13bp
 type: application
 server:
   customMiddleware:

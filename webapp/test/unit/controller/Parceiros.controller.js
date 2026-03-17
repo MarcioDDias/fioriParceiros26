@@ -1,7 +1,7 @@
 /*global QUnit*/
 
 sap.ui.define([
-	"fiori/z99bp/controller/Parceiros.controller"
+	"fiori/z13bp/controller/Parceiros.controller"
 ], function (Controller) {
 	"use strict";
 

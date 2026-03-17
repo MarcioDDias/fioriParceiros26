@@ -6,7 +6,7 @@ sap.ui.define([
 function (Controller, Filter, FilterOperator) {
     "use strict";
 
-    return Controller.extend("fiori.z99bp.controller.Parceiros", {
+    return Controller.extend("fiori.z13bp.controller.Parceiros", {
         onInit: function () {
 
         },

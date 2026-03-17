@@ -5,13 +5,13 @@
 sap.ui.define([
         "sap/ui/core/UIComponent",
         "sap/ui/Device",
-        "fiori/z99bp/model/models",
+        "fiori/z13bp/model/models",
         "sap/ui/model/json/JSONModel"
     ],
     function (UIComponent, Device, models, JSONModel) {
         "use strict";
 
-        return UIComponent.extend("fiori.z99bp.Component", {
+        return UIComponent.extend("fiori.z13bp.Component", {
             metadata: {
                 manifest: "json"
             },

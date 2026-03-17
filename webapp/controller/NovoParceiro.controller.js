@@ -7,7 +7,7 @@ sap.ui.define(
     function(BaseController, MessageToast, MessageBox) {
       "use strict";
   
-      return BaseController.extend("fiori.z99bp.controller.NovoParceiro", {
+      return BaseController.extend("fiori.z13bp.controller.NovoParceiro", {
         onInit: function() {
             //resgata o roteador no pai do controller (Component.js)
             let oRoteador = this.getOwnerComponent().getRouter();

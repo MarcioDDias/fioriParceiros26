@@ -1,7 +1,7 @@
 {
   "_version": "1.12.0",
   "sap.app": {
-    "id": "fiori.z99bp",
+    "id": "fiori.z13bp",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -73,7 +73,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "fiori.z99bp.i18n.i18n"
+          "bundleName": "fiori.z13bp.i18n.i18n"
         }
       },
       "": {
@@ -100,7 +100,7 @@
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
         "async": true,
-        "viewPath": "fiori.z99bp.view",
+        "viewPath": "fiori.z13bp.view",
         "controlId": "fcl",
         "clearControlAggregation": false
       },
@@ -157,7 +157,7 @@
       }
     },
     "rootView": {
-      "viewName": "fiori.z99bp.view.App",
+      "viewName": "fiori.z13bp.view.App",
       "type": "XML",
       "async": true,
       "id": "App"

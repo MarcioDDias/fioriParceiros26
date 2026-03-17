@@ -1,10 +1,10 @@
-<mvc:View xmlns:f="sap.f" controllerName="fiori.z99bp.controller.NovoParceiro"
+<mvc:View xmlns:f="sap.f" controllerName="fiori.z13bp.controller.NovoParceiro"
     xmlns:html="http://www.w3.org/1999/xhtml"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m"
     xmlns:core="sap.ui.core">
     <Page>
-       <core:Fragment fragmentName="fiori.z99bp.view.fragment.criarParceiro" type="XML" id="formCriarParceiro"/>   
+       <core:Fragment fragmentName="fiori.z13bp.view.fragment.criarParceiro" type="XML" id="formCriarParceiro"/>   
 
 
 
